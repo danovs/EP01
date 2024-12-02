@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TechnoService"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="TechoService" Height="720" Width="1130" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
         
+        <Border BorderThickness="0 1 0 0" BorderBrush="#d9d9d9">
+            <Grid>
+              
+            </Grid>
+        </Border>
+
+        
+        <Border Grid.Row="1" BorderThickness="0 1 0 0" BorderBrush="#d9d9d9">
+            <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="Users" Content="Пользователи" Width="100" Height="25" Style="{StaticResource Button}" Click="Users_Click" Margin="0 0 10 0"/>
+                <Button x:Name="Employees" Content="Сотрдуники" Width="100" Height="25" Style="{StaticResource Button}" Click="Employees_Click" Margin="0 0 10 0"/>
+                <Button x:Name="Clients" Content="Клиенты" Width="100" Height="25" Style="{StaticResource Button}" Click="Clients_Click" Margin="0 0 10 0"/>
+                <Button x:Name="Equipment" Content="Техника" Width="100" Height="25" Style="{StaticResource Button}" Click="Equipment_Click" Margin="0 0 10 0"/>
+                <Button x:Name="Requests" Content="Заявки" Width="100" Height="25" Style="{StaticResource Button}" Click="Requests_Click" Margin="0 0 10 0"/>
+                <Button x:Name="Logs" Content="Логи" Width="100" Height="25" Style="{StaticResource Button}" Click="Logs_Click" Margin="0 0 10 0"/>
+                <Button x:Name="Reports" Content="Отчеты" Width="100" Height="25" Style="{StaticResource Button}" Click="Reports_Click" Margin="0 0 0 0"/>
+                
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>

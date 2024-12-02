@@ -15,14 +15,53 @@ using System.Windows.Shapes;
 
 namespace TechnoService
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void MainFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+            if (!(e.Content is Page page)) return;
+            this.Title = $"TechnoService - {page.Title}";
+        }
+
+        private void Users_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Employees_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Clients_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Equipment_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Requests_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Logs_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Reports_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

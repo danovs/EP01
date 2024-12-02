@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="18fb0eb71a5749a5925d5085bc170cf2" Name="Diagram1">
+        <EntityTypeShape EntityType="TechnoServiceModel.Client" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TechnoServiceModel.Employee" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TechnoServiceModel.Equipment" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TechnoServiceModel.EquipmentType" Width="1.5" PointX="0.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TechnoServiceModel.FaultType" Width="1.5" PointX="3" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TechnoServiceModel.Position" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TechnoServiceModel.Priority" Width="1.5" PointX="3" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TechnoServiceModel.RequestLog" Width="1.5" PointX="7.5" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="TechnoServiceModel.Request" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TechnoServiceModel.Status" Width="1.5" PointX="3" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TechnoServiceModel.User" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <AssociationConnector Association="TechnoServiceModel.FK__Requests__Client__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="TechnoServiceModel.FK__Employees__Posit__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="TechnoServiceModel.FK__Requests__Employ__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="TechnoServiceModel.FK_Employees_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TechnoServiceModel.FK__Equipments__Type__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="TechnoServiceModel.FK__Requests__Equipm__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="TechnoServiceModel.FK__Requests__FaultT__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="TechnoServiceModel.FK__Requests__Priori__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="TechnoServiceModel.FK__RequestLo__Reque__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="TechnoServiceModel.FK__Requests__Status__5AEE82B9" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

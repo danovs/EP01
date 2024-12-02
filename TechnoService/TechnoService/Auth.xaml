@@ -1,0 +1,32 @@
+﻿<Window x:Class="TechnoService.Auth"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TechnoService"
+        mc:Ignorable="d"
+        Title="TechnoService" Height="720" Width="1130" WindowStartupLocation="CenterScreen" Closing="Window_Closing" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="400">
+            <TextBlock Grid.Row="0" Text="Авторизация" FontSize="48" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,50" Style="{StaticResource TextBlock}"/>
+
+            <Label Content="Логин" FontSize="20" HorizontalAlignment="Left" Style="{StaticResource Label}"/>
+            <TextBox Name="LoginTextBox" FontSize="18" Height="30" HorizontalAlignment="Stretch" Margin="0,10" VerticalContentAlignment="Center"/>
+
+            <Label Content="Пароль" FontSize="20" HorizontalAlignment="Left" Style="{StaticResource Label}"/>
+            <PasswordBox Name="PasswordBox" FontSize="18" Height="30" HorizontalAlignment="Stretch" VerticalContentAlignment="Center"/>
+
+            <Button x:Name="btnLogin" Content="Войти" HorizontalAlignment="Center" Margin="0,30" Height="30" Width="120" FontSize="18" Style="{StaticResource Button}" Click="btnLogin_Click"/>
+
+            <TextBlock HorizontalAlignment="Center" Style="{StaticResource TextBlock}" FontSize="18" Margin="0 10 0 0">
+                <Run Text="Нет аккаунта? "/>
+                <Hyperlink Click="Hyperlink_Click">Зарегистрироваться</Hyperlink>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>

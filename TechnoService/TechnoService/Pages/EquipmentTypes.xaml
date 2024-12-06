@@ -1,0 +1,26 @@
+﻿<Page x:Class="TechnoService.Pages.EquipmentTypes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TechnoService.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EquipmentTypes">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="377*"/>
+            <RowDefinition Height="73*"/>
+        </Grid.RowDefinitions>
+        <DataGrid Grid.Row="0" x:Name="DataGridEquipmentsTypes" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Width="30" Binding="{Binding ID}"/>
+                <DataGridTextColumn Header="Тип" Width="*" Binding="{Binding Type}"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Button Grid.Row="1" x:Name="BtnAdd" Content="Добавить" HorizontalAlignment="Left" Margin="15" Height="40" ToolTip="Нажав на кнопку, Вы можете добавить запись." VerticalAlignment="Center" Style="{StaticResource Button}" Click="BtnAdd_Click"/>
+        <Button Grid.Row="1" x:Name="BtnDelete" Content="Удалить" HorizontalAlignment="Right" Margin="15" Height="40" ToolTip="Нажав на кнопку, Вы можете удалить запись." VerticalAlignment="Center" Style="{StaticResource Button}" Click="BtnDelete_Click"/>
+    </Grid>
+</Page>

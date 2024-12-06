@@ -41,6 +41,8 @@ namespace TechnoService
 
         private void Hyperlink_Click(object sender, RoutedEventArgs e)
         {
+            
+            
             isNavToReg = true;
             Reg reg = new Reg();
             reg.Show();
@@ -73,7 +75,14 @@ namespace TechnoService
                 }
 
                 MessageBox.Show("Вы авторизовались!");
+
+                var employee = db.Employees.FirstOrDefault(u => u.UserID == user.ID);
+                if (employee != null)
+                {
+                    ((App)Application.Current).CurrentUserPositionID = employee.PositionID;
+                }
                 isNavToReg = true;
+                ((App)Application.Current).CurrentUserID = user.ID;
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
                 this.Close();

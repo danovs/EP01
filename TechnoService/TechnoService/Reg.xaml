@@ -16,19 +16,19 @@
             <TextBlock Grid.Row="0" Text="Регистрация" FontSize="48" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,20" Style="{StaticResource TextBlock}"/>
 
             <Label Content="Логин" FontSize="20" HorizontalAlignment="Left" Style="{StaticResource Label}"/>
-            <TextBox Name="Login" FontSize="18" Height="30" HorizontalAlignment="Stretch" Margin="0,10" VerticalContentAlignment="Center"/>
+            <TextBox Name="Login" FontSize="18" Height="30" HorizontalAlignment="Stretch" Margin="0,10" VerticalContentAlignment="Center" FontFamily="Monotype Corsiva"/>
 
             <Label Content="Пароль" FontSize="20" HorizontalAlignment="Left" Style="{StaticResource Label}"/>
             <PasswordBox Name="Password" FontSize="18" Height="30" HorizontalAlignment="Stretch" VerticalContentAlignment="Center"/>
 
             <Label Content="ФИО" FontSize="20" HorizontalAlignment="Left" Style="{StaticResource Label}"/>
-            <TextBox Name="FIObox" FontSize="18" Height="30" HorizontalAlignment="Stretch" VerticalContentAlignment="Center"/>
+            <TextBox Name="FIObox" FontSize="18" Height="30" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" FontFamily="Monotype Corsiva"/>
 
             <Label Content="Номер телефона" FontSize="20" HorizontalAlignment="Left" Style="{StaticResource Label}"/>
-            <TextBox Name="PhoneNumber" FontSize="18" Height="30" HorizontalAlignment="Stretch" VerticalContentAlignment="Center"/>
+            <TextBox Name="PhoneNumber" FontSize="18" Height="30" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" FontFamily="Monotype Corsiva"/>
 
             <Label Content="Должность" FontSize="20" HorizontalAlignment="Left" Style="{StaticResource Label}"/>
-            <ComboBox Name="Positions" FontSize="18" Height="30" HorizontalAlignment="Stretch" VerticalContentAlignment="Center"/>
+            <ComboBox Name="Positions" FontSize="18" Height="30" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" FontFamily="Monotype Corsiva"/>
 
             <Button x:Name="btnRegister" Content="Войти" HorizontalAlignment="Center" Margin="0,30" Height="30" Width="120" FontSize="18" Style="{StaticResource Button}" Click="btnRegister_Click"/>
         </StackPanel>

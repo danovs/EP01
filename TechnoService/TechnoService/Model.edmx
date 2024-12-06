@@ -105,7 +105,9 @@
           <Property Name="Password" Type="varchar" MaxLength="64" Nullable="false" />
         </EntityType>
         <Association Name="FK__Employees__Posit__52593CB8">
-          <End Role="Positions" Type="Self.Positions" Multiplicity="1" />
+          <End Role="Positions" Type="Self.Positions" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Positions">
@@ -117,7 +119,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Equipments__Type__5441852A">
-          <End Role="EquipmentTypes" Type="Self.EquipmentTypes" Multiplicity="1" />
+          <End Role="EquipmentTypes" Type="Self.EquipmentTypes" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Equipments" Type="Self.Equipments" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="EquipmentTypes">
@@ -129,7 +133,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__RequestLo__Reque__5535A963">
-          <End Role="Requests" Type="Self.Requests" Multiplicity="1" />
+          <End Role="Requests" Type="Self.Requests" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="RequestLogs" Type="Self.RequestLogs" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Requests">
@@ -141,7 +147,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Requests__Client__5629CD9C">
-          <End Role="Clients" Type="Self.Clients" Multiplicity="1" />
+          <End Role="Clients" Type="Self.Clients" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Requests" Type="Self.Requests" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Clients">
@@ -153,7 +161,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Requests__Employ__571DF1D5">
-          <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+          <End Role="Employees" Type="Self.Employees" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Requests" Type="Self.Requests" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Employees">
@@ -165,7 +175,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Requests__Equipm__5812160E">
-          <End Role="Equipments" Type="Self.Equipments" Multiplicity="1" />
+          <End Role="Equipments" Type="Self.Equipments" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Requests" Type="Self.Requests" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Equipments">
@@ -177,7 +189,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Requests__FaultT__59063A47">
-          <End Role="FaultTypes" Type="Self.FaultTypes" Multiplicity="1" />
+          <End Role="FaultTypes" Type="Self.FaultTypes" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Requests" Type="Self.Requests" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="FaultTypes">
@@ -189,7 +203,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Requests__Priori__59FA5E80">
-          <End Role="Priorities" Type="Self.Priorities" Multiplicity="1" />
+          <End Role="Priorities" Type="Self.Priorities" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Requests" Type="Self.Requests" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Priorities">
@@ -201,7 +217,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Requests__Status__5AEE82B9">
-          <End Role="Statuses" Type="Self.Statuses" Multiplicity="1" />
+          <End Role="Statuses" Type="Self.Statuses" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Requests" Type="Self.Requests" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Statuses">
@@ -213,7 +231,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Employees_Users">
-          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="Users" Type="Self.Users" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Users">
@@ -402,7 +422,9 @@
           <NavigationProperty Name="Employees" Relationship="Self.FK_Employees_Users" FromRole="Users" ToRole="Employees" />
         </EntityType>
         <Association Name="FK__Requests__Client__5629CD9C">
-          <End Role="Clients" Type="Self.Client" Multiplicity="1" />
+          <End Role="Clients" Type="Self.Client" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Requests" Type="Self.Request" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Clients">
@@ -414,7 +436,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Employees__Posit__52593CB8">
-          <End Role="Positions" Type="Self.Position" Multiplicity="1" />
+          <End Role="Positions" Type="Self.Position" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Employees" Type="Self.Employee" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Positions">
@@ -426,7 +450,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Requests__Employ__571DF1D5">
-          <End Role="Employees" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Employees" Type="Self.Employee" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Requests" Type="Self.Request" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Employees">
@@ -438,7 +464,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Employees_Users">
-          <End Role="Users" Type="Self.User" Multiplicity="1" />
+          <End Role="Users" Type="Self.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Employees" Type="Self.Employee" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Users">
@@ -450,7 +478,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Equipments__Type__5441852A">
-          <End Role="EquipmentTypes" Type="Self.EquipmentType" Multiplicity="1" />
+          <End Role="EquipmentTypes" Type="Self.EquipmentType" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Equipments" Type="Self.Equipment" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="EquipmentTypes">
@@ -462,7 +492,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Requests__Equipm__5812160E">
-          <End Role="Equipments" Type="Self.Equipment" Multiplicity="1" />
+          <End Role="Equipments" Type="Self.Equipment" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Requests" Type="Self.Request" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Equipments">
@@ -474,7 +506,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Requests__FaultT__59063A47">
-          <End Role="FaultTypes" Type="Self.FaultType" Multiplicity="1" />
+          <End Role="FaultTypes" Type="Self.FaultType" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Requests" Type="Self.Request" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="FaultTypes">
@@ -486,7 +520,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Requests__Priori__59FA5E80">
-          <End Role="Priorities" Type="Self.Priority" Multiplicity="1" />
+          <End Role="Priorities" Type="Self.Priority" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Requests" Type="Self.Request" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Priorities">
@@ -498,7 +534,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__RequestLo__Reque__5535A963">
-          <End Role="Requests" Type="Self.Request" Multiplicity="1" />
+          <End Role="Requests" Type="Self.Request" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="RequestLogs" Type="Self.RequestLog" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Requests">
@@ -510,7 +548,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Requests__Status__5AEE82B9">
-          <End Role="Statuses" Type="Self.Status" Multiplicity="1" />
+          <End Role="Statuses" Type="Self.Status" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Requests" Type="Self.Request" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Statuses">

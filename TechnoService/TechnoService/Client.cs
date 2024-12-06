@@ -26,7 +26,9 @@ namespace TechnoService
         public string SecondName { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
-    
+
+        public string FullName => $"{LastName} {FirstName} {SecondName}".Trim();
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Request> Requests { get; set; }
     }

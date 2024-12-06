@@ -1,0 +1,39 @@
+﻿<Page x:Class="TechnoService.Pages.EmployeesAddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TechnoService.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Сотрудник">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Width="400">
+            
+            <TextBlock Text="Сотрудник" FontSize="26" FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,20" Style="{StaticResource TextBlock}"/>
+
+            <TextBlock Text="ФИО" FontSize="16" Style="{StaticResource TextBlock}"/>
+            <TextBox Name="FullNameTextBox" Width="400" Height="40" FontSize="16" VerticalContentAlignment="Center" Margin="0 0 0 10" FontFamily="Monotype Corsiva"/>
+
+            <TextBlock Text="Номер телефона" FontSize="16" Style="{StaticResource TextBlock}"/>
+            <TextBox Name="PhoneNumberTextBox" Width="400" Height="40" FontSize="16" VerticalContentAlignment="Center" Margin="0 0 0 10" FontFamily="Monotype Corsiva"/>
+
+            
+            <TextBlock Text="Должность" FontSize="16"/>
+            <ComboBox Name="Positions" Width="400" Height="40" FontSize="16" VerticalContentAlignment="Center" FontFamily="Monotype Corsiva" />
+        </StackPanel>
+
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="2" Margin="0,30,0,0">
+            <Button x:Name="SaveButton" Content="Сохранить" Width="120" Height="30" FontSize="16" Style="{StaticResource Button}" Margin="0 0 10 10" Click="SaveButton_Click"/>
+            <Button x:Name="GoBackButton" Content="Назад" Width="120" Height="30" FontSize="16"  Style="{StaticResource Button}" Margin="0 0 10 10" Click="GoBackButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

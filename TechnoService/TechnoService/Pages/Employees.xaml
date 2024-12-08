@@ -13,7 +13,7 @@
             <RowDefinition Height="377*"/>
             <RowDefinition Height="73*"/>
         </Grid.RowDefinitions>
-        <DataGrid Grid.Row="0" x:Name="DataGridEmployees" AutoGenerateColumns="False" IsReadOnly="True">
+        <DataGrid Grid.Row="0" x:Name="DataGridEmployees" AutoGenerateColumns="False" IsReadOnly="True" FontFamily="Monotype Corsiva" FontSize="14">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID сотрудника" Width="*" Binding="{Binding UserID}"/>
                 <DataGridTextColumn Header="Должность" Width="*" Binding="{Binding Position.Position1}"/>

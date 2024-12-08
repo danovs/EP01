@@ -16,6 +16,17 @@ namespace TechnoService
 
             int UserPositionID = ((App)Application.Current).CurrentUserPositionID;
 
+            if (UserPositionID == 1)
+            {
+                Employees.Visibility = Visibility.Collapsed;
+                Reports.Visibility = Visibility.Collapsed;
+                Equipment.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                Feedback.Visibility = Visibility.Collapsed;
+            }
+
             FrameManager.MainFrame = MainFrame;
         }
 
@@ -23,11 +34,6 @@ namespace TechnoService
         {
             if (!(e.Content is Page page)) return;
             this.Title = $"TechnoService - {page.Title}";
-        }
-
-        private void Users_Click(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void Employees_Click(object sender, RoutedEventArgs e)
@@ -63,6 +69,20 @@ namespace TechnoService
         private void Feedback_Click(object sender, RoutedEventArgs e)
         {
             FrameManager.MainFrame.Navigate(new Uri("Pages/QRPage.xaml", UriKind.Relative));
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            var result = MessageBox.Show("Вы действительно хотите выйти?", "Выход", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                e.Cancel = false;
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

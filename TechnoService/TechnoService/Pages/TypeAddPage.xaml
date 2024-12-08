@@ -16,7 +16,6 @@
         </Grid.RowDefinitions>
 
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Width="400">
-            <!-- Заголовок -->
             <TextBlock Text="Тип" FontSize="26" FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,20" Style="{StaticResource TextBlock}"/>
 
            
@@ -26,7 +25,6 @@
             
         </StackPanel>
 
-        <!-- Кнопки -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="2" Margin="0,30,0,0">
             <Button x:Name="SaveButton" Content="Сохранить" Width="120" Height="30" FontSize="16" Click="SaveButton_Click" Style="{StaticResource Button}" Margin="0 0 10 10"/>
             <Button x:Name="GoBackButton" Content="Назад" Width="120" Height="30" FontSize="16" Click="GoBackButton_Click" Style="{StaticResource Button}" Margin="0 0 10 10"/>

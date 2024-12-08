@@ -16,10 +16,8 @@
         </Grid.RowDefinitions>
 
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Width="400">
-            <!-- Заголовок -->
             <TextBlock Text="Добавление заявки" FontSize="26" FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,20" Style="{StaticResource TextBlock}"/>
 
-            <!-- ФИО -->
             <TextBlock Text="Клиент" FontSize="16" Style="{StaticResource TextBlock}"/>
             <ComboBox Name="Clients" Width="400" Height="40" FontSize="16" VerticalContentAlignment="Center" Margin="0 0 0 10" FontFamily="Monotype Corsiva"/>
 
@@ -41,7 +39,6 @@
             <ComboBox Name="Employees" Width="400" Height="40" FontSize="16" VerticalContentAlignment="Center" FontFamily="Monotype Corsiva" />
         </StackPanel>
 
-        <!-- Кнопки -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="2" Margin="0,30,0,0">
             <Button x:Name="SaveButton" Content="Сохранить" Width="120" Height="30" FontSize="16"  Style="{StaticResource Button}" Margin="0 0 10 10" Click="SaveButton_Click"/>
             <Button x:Name="GoBackButton" Content="Назад" Width="120" Height="30" FontSize="16"  Style="{StaticResource Button}" Margin="0 0 10 10" Click="GoBackButton_Click"/>

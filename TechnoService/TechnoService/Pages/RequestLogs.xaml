@@ -13,7 +13,7 @@
             <RowDefinition Height="377*"/>
             <RowDefinition Height="73*"/>
         </Grid.RowDefinitions>
-        <DataGrid Grid.Row="0" x:Name="DataGridRequests" AutoGenerateColumns="False" IsReadOnly="True">
+        <DataGrid Grid.Row="0" x:Name="DataGridRequests" AutoGenerateColumns="False" IsReadOnly="True" FontFamily="Monotype Corsiva" FontSize="14">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Width="*" Binding="{Binding ID}"/>
                 <DataGridTextColumn Header="Дата лога" Width="*" Binding="{Binding LogDate}"/>

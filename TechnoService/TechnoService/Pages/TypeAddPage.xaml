@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:TechnoService.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="TypeAddPage">
+      Title="Добавление типа техники">
 
     <Grid Background="White">
         <Grid.RowDefinitions>
